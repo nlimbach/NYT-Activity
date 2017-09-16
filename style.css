@@ -1,0 +1,9 @@
+.container {
+    background-color: #20315a;
+    width: 600px;
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    color: white;
+}
