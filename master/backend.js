@@ -23,6 +23,28 @@ console.log("Test");
 
                 console.log(response);
 
+                var results = response.data;
+                // ========================
+
+                for (var i = 0; i < results.length; i++) {
+
+                    var articleDiv = $("<div>");
+
+                    p.text("Rating: " + results[i].rating);
+
+
+                    var animalImage = $("<img>");
+
+                    animalImage.attr("src", results[i].images.fixed_height.url);
+
+                    animalDiv.append(p);
+                    animalDiv.append(animalImage);
+                    $("#gifs-appear-here").prepend(animalDiv);
+
+
+                }
+
+            });
 
             })
 
